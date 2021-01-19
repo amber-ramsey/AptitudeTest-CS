@@ -1,0 +1,18 @@
+@media screen {
+	.forPrint {
+		display: none;
+	}
+}
+
+@media print {
+	.cited {
+		counter-reset: ref-count;
+	}
+
+	.cited a::after {
+		counter-increment: ref-count;
+		content: ' [' counter(ref-count) ']';
+		font-size: small;
+		vertical-align: super;
+	}
+}

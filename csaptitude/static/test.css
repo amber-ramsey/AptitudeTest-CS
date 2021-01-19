@@ -1,0 +1,196 @@
+form {
+	font-family: arial, verdana, sans;
+	font-size: 10pt;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.hideOnPrint {
+	display: none;
+}
+
+/* Custom CSS by Sean Hayes */
+#questionNav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+
+	min-width: 667px;
+	width: 100%;
+	max-width: 750px
+	margin: 0 auto;
+
+}
+#questionNav input[type=button] {
+	display: block;
+	padding: 8px 5px;
+	margin: 6px auto;
+	width: 100%;
+}
+
+#questionNav > div {
+	flex: 1;
+	flex-basis: 100%
+	flex-grow: 1;
+	padding: 6px;
+}
+
+#questionNav > div:first-child {
+	flex: 0 0 160px;
+}
+
+#QuestionImage {
+	min-height: 269px;
+	min-width: 633px;
+	background: #FFFFCC;
+	overflow: visible;
+	width: 70%;
+	margin: 5px auto 1em auto;
+	position: relative;
+}
+
+#QuestionImage img {
+	border: none;
+	visibility: hidden;
+
+	/* Display at bottom center */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+#feedbackBox {
+	min-height: 5.5em;
+	padding: 3px;
+	background: #FFF;
+	border-radius: 3px;
+	text-align: center;
+}
+
+#testForm input:not([type]), #testForm input[type=text] {
+	border: none;
+	text-align: center;
+}
+
+#testForm input:not([type]):hover, #testForm input[type=text]:hover {
+	cursor: default;
+}
+
+
+td {
+	vertical-align: top;
+}
+
+#testForm input[type=submit] {
+	margin-left: auto;
+	margin-right: 0;
+	display: block;
+	padding: 8px 5px;
+}
+
+#Questionbox {
+	border: solid #ddd 1px;
+	border-radius: 3px;
+	padding: 4px;
+	min-height: 8em;
+	background: white;
+	overflow: visible;
+}
+
+#questionNum {
+	text-align: right;
+	padding-right: 3px;
+	margin: 4px 0 1em 0;
+}
+
+table.answer_list {
+	border-collapse: collapse;
+	background: #FFFFE0;
+}
+
+table.answer_list tr:nth-child(even) {
+	background: #FFFFCC;
+}
+
+.answer_list th, .answer_list td {
+	border-bottom: 1px solid #ddd;
+	padding: 4px;
+}
+
+.answer_list th {
+	padding-top: 1em;
+	font-weight: strong;
+}
+
+table.answer_list td {
+	text-align: center;
+}
+table.answer_list td:last-child {
+	text-align: left;
+}
+
+.active {
+	display: block;
+}
+
+a.active {
+	color: #495057;
+	background-color: #fff;
+	border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/* Radio Buttons */
+.choicebox {
+	display: table;
+	width: 100%;
+}
+.inputGroup {
+	display: table-cell;
+	position: relative;
+	padding: 3px;
+	width: 16%
+}
+
+.inputGroup input
+{
+	position:absolute;
+	left: 3px;
+	top: 12px;
+	margin: 3px;
+}
+
+.inputGroup label
+{
+	background-color: #eee;
+	border: solid #ccc 1.5px;
+	display: block;
+	padding: 10px 1px 10px 22px;
+	text-align: left;
+}
+
+/*
+input[type=radio]:enabled + label:hover {
+	background-color: #def;
+	border: solid #5AF 1.5px;
+}
+*/
+
+input[type=radio]:checked + label {
+	background: #55A;
+	font-style: normal;
+	color: white;
+	font-weight: bold;
+}
+
+#testForm table {
+	width: 100%;
+	min-width: 870px;
+	max-width: 900px;
+	background-color: #FFC;
+	margin: 0 auto;
+}
+
+.invalid-feedback {
+  display: block;
+}

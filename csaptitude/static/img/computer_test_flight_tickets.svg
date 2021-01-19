@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<svg width="633" height="240" viewBox="0 0 633 240" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<g style="font-family: verdana, arial, sans; font-size: 15px; font-weight:normal; fill: black">
+		<text x="34" y="030">Flight tickets for an airline are coded as follows:</text>
+		<text x="34" y="050">UK flights are coded A, European Destinations B, Asian Destinations C, and</text>
+		<text x="34" y="070">the Americas D.</text>
+		<text x="34" y="090">If a flight takes place between 10 pm and 6 am, the same codes are used</text>
+		<text x="34" y="110">but with lower case letters (a,b,c, and d).</text>
+		<text x="34" y="130">Male passengers are coded X and female passengers are coded Y.</text>
+		<text x="34" y="150">Children are coded by the same letters in lower case (x.y).</text>
+		<text x="34" y="170">Meals are coded as follows: European meal G, Asian Meal H, Vegetarian</text>
+		<text x="34" y="190">Meal K. Children's meals coded by the same letters in lower case (g,h,k)</text>
+		<text x="34" y="210">First Class passengers are coded P, Business Class Q, and economy R.</text>
+	</g>
+</svg>

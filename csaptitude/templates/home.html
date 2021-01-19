@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="row align-items-center">
+		<div class="col-4 mx-auto col-md-5 order-md-2">
+			<img src="{{ url_for('static', filename='img/logo.svg') }}" class="img-fluid mb-3 mb-md-0" role="img" />
+		</div>
+		<div class="col-md-7 order-md-1 text-md-left pr-md-5">
+			<h1 class="mb-3 bd-text-purple-bright">Computer-Programming<br />Aptitude Test</h1>
+			<p class="lead">
+				The test evaluates the following skills:
+			</p>
+			<ul class="lead mb-4">
+				<li>Logical thinking and numerical-problem solving</li>
+				<li>Pattern and syntax recognition.</li>
+				<li>Ability to  follow complex procedures.</li>
+			</ul>
+			<div class="row mx-n2">
+				{% if current_user.is_authenticated %}
+					<div class="col-md px-2">
+						<a href="{{ url_for('test') }}" class="btn btn-lg btn-primary col-md mb-3">Test the Test</a>
+					</div>
+				{% else %}
+					<div class="col-md px-2">
+						<a href="{{ url_for('register') }}" class="btn btn-lg btn-primary w-100 mb-3">Register for the Test</a>
+					</div>
+					<div class="col-md px-2">
+						<a href="{{ url_for('login') }}" class="btn btn-lg btn-outline-secondary w-100 mb-3">Login</a>
+					</div>
+				{% endif %}
+			</div>
+			<p class="text-muted mb-0">
+				This test was created by Bruce Woodcock at the University of Kent.
+			</p>
+		</div>
+	</div>
+{% endblock content %}

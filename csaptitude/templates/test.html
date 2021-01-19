@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='test.css') }}">
+
+	<!-- JS -->
+	<script language="javascript" type="text/javascript">
+		$(function(){
+			$('#instructionsModal').modal('show');
+		})
+
+	</script>
+	<script language="javascript" src="{{ url_for('static', filename='computertest.js') }}"></script>
+{% endblock head %}
+
+{% block content %}
+<h1 align="center">Computer Programming Aptitude Test</h1>
+
+	<!-- Modal -->
+	<div class="modal fade" id="instructionsModal" tabindex="-1" role="dialog" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="instructionsModalLabel">Test Instructions</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>The test has <strong>26 questions</strong> and you will have <strong>25 minutes</strong> to do them. At the end of the test (when 25 minutes have elapsed), you  will be given a score. <strong>Please use SCRAP PAPER and a CALCULATOR for working out answers.</strong> Please note that this is quite a demanding test.</p>
+					<p><strong>The test will start with three easy example questions, which will not be marked or timed</strong>. Click on <strong>the "First Example"</strong> button to begin. Click on your answer to  answer it. You can change your answer by clicking on another answer. You can also go back to the previous question by clicking on the previous question button. If you are certain you have finished the test, you can click on <strong>"Finish Test and Get Your Score".</strong></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="test" class="card">
+		<div class="card-body">
+		<!-- Button trigger modal -->
+		<div style="width: 70%; min-width: 633px; margin: auto; height: 2.5em">
+			<button type="button" class="btn btn-light float-right" data-toggle="modal" data-target="#instructionsModal">
+				Test Instructions
+			</button><br />
+		</div>
+
+		<div id="QuestionImage">
+			<img src="" alt="" name="slideshow" id="slideshow" />
+		</div>
+		<form name="testForm" id="testForm" method="POST" action="">
+			{{ form.hidden_tag() }}
+
+			<div id="questionNav">
+				<div>
+					<div id="questionNum">&nbsp;</div>
+					<input type="button" name="prevquestbutton" value="Previous Question" onclick="PrevQuest()" disabled>
+					<input type="button" name="nextquestbutton" value="First Example" onclick="NextQuest()">
+				</div>
+				<div id="Questionbox"></div>
+			</div>
+			<div class="choicebox">
+				<div class="inputGroup">
+					<input type="radio" value="1" name="question_1" id="choice_1" disabled>
+					<label for="choice_1">&nbsp;</label>
+				</div>
+				<div class="inputGroup">
+					<input type="radio" value="2" name="question_1" id="choice_2" disabled>
+					<label for="choice_2">&nbsp;</label>
+				</div>
+				<div class="inputGroup">
+					<input type="radio" value="3" name="question_1" id="choice_3" disabled>
+					<label for="choice_3">&nbsp;</label>
+				</div>
+				<div class="inputGroup">
+					<input type="radio" value="4" name="question_1" id="choice_4" disabled>
+					<label for="choice_4">&nbsp;</label>
+				</div>
+				<div class="inputGroup">
+					<input type="radio" value="5" name="question_1" id="choice_5" disabled>
+					<label for="choice_5">&nbsp;</label>
+				</div>
+				<div class="inputGroup">
+					<input type="radio" value="6" name="question_1" id="choice_6" disabled>
+					<label for="choice_6">&nbsp;</label>
+				</div>
+			</div>
+			<div>
+				<strong>Time Left:</strong>
+				<span id="countdown">25 minutes (once the test starts)</span>
+
+			</div>
+			<div>
+				<div id="feedbackBox">
+					{% if form.answers.errors %}
+
+						<div class="invalid-feedback">
+								{% for error in form.answers.errors %}
+										<span>{{ error }}</span>
+								{% endfor %}
+						</div>
+					{% endif %}
+					{% if form.elapsedTime.errors %}
+						<div class="invalid-feedback">
+								{% for error in form.elapsedTime.errors %}
+										<span>{{ error }}</span>
+								{% endfor %}
+						</div>
+					{% endif %}
+				</div>
+				{{ form.submit(class="", disabled="") }}
+				<em>Test developed by Bruce Woodcock</em>
+			</div>
+		</form>
+	</div>
+	</div>
+{% endblock content %}
