@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS "question_response" (
 	"question_num"	INTEGER NOT NULL,
 	"response"	INTEGER NOT NULL,
 	"correct"	BOOLEAN NOT NULL,
+	"elapsed_time_ms"	INTEGER NOT NULL,
 	PRIMARY KEY("id"),
 	FOREIGN KEY("test_result_id") REFERENCES "test_result"("id"),
 	CHECK("correct" IN (0, 1)),

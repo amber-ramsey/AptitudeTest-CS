@@ -65,6 +65,7 @@ def test():
 		#print (request.user_agent.version)
 		score = 0
 		answers = form.answers.data.split(',')
+		elapsedTimes = form.questionTimes.data.split(',')
 		test = TestResult(
 			user_id=current_user.id,
 			elapsed_time_ms=int(form.elapsedTime.data),
@@ -83,7 +84,8 @@ def test():
 					is_example=index < 3,
 					question_num=index - 3,
 					response=int(ans),
-					correct=correct)
+					correct=correct,
+					elapsed_time_ms = (0 if elapsedTimes[index] == "NaN" else int(elapsedTimes[index])))
 				db.session.add(quest)
 				if correct and index >= 3:
 					score += 1

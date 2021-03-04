@@ -49,7 +49,7 @@ const Timer = (function() {
 const images = [];
 images.length = 10;
 
-
+// array of 29 items (3 examples + 26 questions).
 const Questions = Object.freeze([
     //EXAMPLE QUESTIONS
     {
@@ -457,7 +457,15 @@ const Questions = Object.freeze([
     }
 ]);
 
-const Ans = new Array(29); // array of 29 items (3 examples + 26 questions).
+
+// Array to hold the user's test answers.
+const Ans = new Array(Questions.length);
+
+// Array to hold the time that the user selected an answer.
+const AnsTimes = new Array(Questions.length).fill(0);
+
+var questionStartTime = null;
+
 var num = -1; //when next quest button clicked advances to 0 at start of test
 
 const confirmNavigationAway = (event) => {
@@ -614,6 +622,8 @@ function showQuestion(num)
     window.document.testForm.prevquestbutton.disabled = num === 3 || num <= 0;
     window.document.testForm.nextquestbutton.disabled = num >= 28;
     window.document.testForm.submit.disabled = num < 3;
+
+    questionStartTime = Date.now(); // Note the time on this question.
 }
 
 function RecordAnswer()
@@ -644,6 +654,9 @@ function RecordAnswer()
                 Ans[num] = index;
             }
         });
+
+        // Store the elapse time
+        AnsTimes[num] += Date.now() - questionStartTime;
     }
 }
 
@@ -652,7 +665,7 @@ function GetScore(event)
     // Store the elapse time as soon as possible
     window.document.testForm.elapsedTime.value = Timer.elapsedMsec();
 
-    if (Timer.remainingMsec() <= 0 ||confirm("Are you sure you wish to finish the test?\nOnce submitted you will not be able to change your answers.")) {
+    if (Timer.remainingMsec() <= 0 || confirm("Are you sure you wish to finish the test?\nOnce submitted you will not be able to change your answers.")) {
         let totalscore = 0;
         const wrongAns = [];
 
@@ -686,6 +699,7 @@ function GetScore(event)
             wrongAns.join(", ") + ".";
 
         window.document.testForm.answers.value = Ans.join(",");
+        window.document.testForm.questionTimes.value = AnsTimes.join(",");
         return true;
     }
     else {

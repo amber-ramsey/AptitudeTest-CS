@@ -41,6 +41,7 @@ class QuestionResponse(db.Model):
 	question_num = db.Column(db.Integer, nullable=False)
 	response = db.Column(db.Integer, nullable=False)
 	correct = db.Column(db.Boolean, nullable=False)
+	elapsed_time_ms = db.Column(db.Integer, nullable=False)
 
 	def __repr__(self):
 		return f"QuestionResponse('test {self.test_result_id}', '{self.response}', '{self.correct}')"

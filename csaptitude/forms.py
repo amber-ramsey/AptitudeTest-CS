@@ -45,6 +45,7 @@ class TestResultsForm(FlaskForm):
 	answers = HiddenField(DataRequired())
 	submit = SubmitField('Finish Test and View Your Score')
 	elapsedTime = HiddenField(validators=[DataRequired()])
+	questionTimes = HiddenField(validators=[DataRequired()])
 
 	def validate_answers(self, answers):
 		answers = answers.data.split(',')
