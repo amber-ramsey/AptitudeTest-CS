@@ -7,14 +7,25 @@ A Python 3 Flask web app for logging responses to the [Computer-Programming Apti
 
 Currently the app supports use with both Python 3.
 
-* Download pip the package manager.  
-  http://pip.readthedocs.org/en/latest/installing.html
+* Install [Python 3](https://www.python.org/downloads/).
 
 * Install dependencies  
   `pip install -r requirements.txt`
 
+* Set environment variables.
+  - Windows  
+    ```batch
+    SET FLASK_APP=csaptitude
+    ```
+  - Linux/macOS  
+    ```shell
+    export FLASK_APP=csaptitude
+    ```
+  
 * Create an Sqlite database  
-  `flask initdb` (May need to first set the environment variable `FLASK_APP=csaptitude`.)
+  ```
+  flask initdb
+  ```
 
 * Launch the webapp locally  
   `python ./run.py`
@@ -26,7 +37,7 @@ Currently the app supports use with both Python 3.
   python -m flask run
   ```
 
-* Run the application in debug mode (in Linux)  
+* Run the application in debug mode (in Linux/macOS)  
   ```shell
   export FLASK_APP=csaptitude
   export FLASK_DEBUG=1
