@@ -656,7 +656,9 @@ function RecordAnswer()
         });
 
         // Store the elapse time
-        AnsTimes[num] += Date.now() - questionStartTime;
+        const currentTime = Date.now();
+        AnsTimes[num] += currentTime - questionStartTime;
+        questionStartTime = currentTime; // reset counter so that we don't double count times
     }
 }
 
