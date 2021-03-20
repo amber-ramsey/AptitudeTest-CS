@@ -99,9 +99,9 @@ This webapp doesn't currently have a way of viewing the stored test results. How
 
 2.  Run the following SQL command and store it in a local CSV file.  
   ```sql
-  \copy (select * from "user") TO 'users.csv' CSV HEADER;
-  \copy (select * from "test_result") TO 'test_results.csv' CSV HEADER;
-  \copy (select * from "question_response") TO 'question_responses.csv' CSV HEADER;
+  \copy (select * from "users") TO 'users.csv' CSV HEADER;
+  \copy (select * from "test_results") TO 'test_results.csv' CSV HEADER;
+  \copy (select * from "question_responses") TO 'question_responses.csv' CSV HEADER;
   ```
 
 3.  Exit the interactive terminal.  

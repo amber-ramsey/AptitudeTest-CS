@@ -7,6 +7,7 @@ def load_user(user_id):
 	return User.query.get(int(user_id))
 
 class User(db.Model, UserMixin):
+	__tablename__ = 'users'
 	id = db.Column(db.Integer, primary_key=True)
 	student_id = db.Column(db.Integer, unique=True, nullable=False)
 	email = db.Column(db.String(120), unique=True, nullable=False)
@@ -19,8 +20,9 @@ class User(db.Model, UserMixin):
 		return f"User('{self.student_id}', '{self.email}', '{self.created_at}')"
 
 class TestResult(db.Model):
+	__tablename__ = 'test_results'
 	id = db.Column(db.Integer, primary_key=True)
-	user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+	user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 	elapsed_time_ms = db.Column(db.Integer, nullable=False)
 	platform = db.Column(db.String(32), nullable=True)
 	browser = db.Column(db.String(32), nullable=True)
@@ -28,15 +30,16 @@ class TestResult(db.Model):
 	language = db.Column(db.String(32), nullable=True)
 	created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
-	responses = db.relationship('QuestionResponse', backref='test_result', lazy=True)
+	responses = db.relationship('QuestionResponse', backref='test_results', lazy=True)
 
 	def __repr__(self):
 		return f"TestResult('test {self.id}', 'user={self.test_taker}' '{self.created_at}', '{len(self.responses)}')"
 
 
 class QuestionResponse(db.Model):
+	__tablename__ = 'question_responses'
 	id = db.Column(db.Integer, primary_key=True)
-	test_result_id = db.Column(db.Integer, db.ForeignKey('test_result.id'), nullable=False)
+	test_result_id = db.Column(db.Integer, db.ForeignKey('test_results.id'), nullable=False)
 	is_example = db.Column(db.Boolean, nullable=False)
 	question_num = db.Column(db.Integer, nullable=False)
 	response = db.Column(db.Integer, nullable=False)
