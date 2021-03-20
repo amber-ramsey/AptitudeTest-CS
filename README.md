@@ -60,7 +60,7 @@ Currently the app supports use with both Python 3.
     export FLASK_APP=csaptitude
     export FLASK_ENV=production
     export APP_SETTINGS=config.ProductionConfig
-    export DATABASE_URL="postgresql://<set this>"
+    export DATABASE_URL=postgres://$(whoami)
     flask run --host=0.0.0.0 -p 80
     ```
 
@@ -87,3 +87,24 @@ Currently the app supports use with both Python 3.
     ```shell
     heroku run python manage.py db upgrade --app csapt
     ```
+
+## Export Database Tables from Heroku
+
+This webapp doesn't currently have a way of viewing the stored test results. However, they can be easily exported for offline analysis.
+
+1.  Connect to the Heroku database.  
+  ```
+  heroku pg:psql
+  ```
+
+2.  Run the following SQL command and store it in a local CSV file.  
+  ```sql
+  \copy (select * from "user") TO 'users.csv' CSV HEADER;
+  \copy (select * from "test_result") TO 'test_results.csv' CSV HEADER;
+  \copy (select * from "question_response") TO 'question_responses.csv' CSV HEADER;
+  ```
+
+3.  Exit the interactive terminal.  
+  ```
+  \q
+  ```
