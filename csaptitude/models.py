@@ -44,4 +44,4 @@ class QuestionResponse(db.Model):
 	elapsed_time_ms = db.Column(db.Integer, nullable=False)
 
 	def __repr__(self):
-		return f"QuestionResponse('test {self.test_result_id}', '{self.response}', '{self.correct}')"
+		return f"QuestionResponse('test result {self.test_result_id}', '{self.response}', '{self.correct}', '{self.elapsed_time_ms}')"
