@@ -71,21 +71,21 @@ Currently the app supports use with both Python 3.
     ```shell
     heroku config:set APP_SETTINGS=config.ProductionConfig
     ```
-3.  Create Postgres database (hobby-dev) is the free tier. Change `csapt` to the name of your Heroku app.  
+3.  Create Postgres database (hobby-dev) is the free tier.  
     ```
-    heroku addons:create heroku-postgresql:hobby-dev --app csapt
+    heroku addons:create heroku-postgresql:hobby-dev
     ```
-4.  View and confirm the APP_SETTINGS and DATABASE_URL are set. Again, change `csapt` to the name of your Heroku app.  
+4.  View and confirm the APP_SETTINGS and DATABASE_URL are set.  
     ```shell
-    heroku config --app csapt
+    heroku config
     ```
 5.  Push repository to heroku.  
     ```shell
     git push heroku
     ```
-6.  Apply the migrations to the production database. Again, change `csapt` to the name of your Heroku app.  
+6.  Apply the migrations to the production database.  
     ```shell
-    heroku run python manage.py db upgrade --app csapt
+    heroku run python manage.py db upgrade
     ```
 
 ## Export Database Tables from Heroku
