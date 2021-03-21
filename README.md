@@ -1,7 +1,7 @@
 CS Aptitude
 ================
 
-A Python 3 Flask web app for logging responses to the [Computer-Programming Aptitude Test](https://www.kent.ac.uk/ces/tests/computer-test.html) by the University of Kent. Currently, the site requires a student login and store the results in a SQLite Database.
+A Python 3 Flask web app for logging responses to the [Computer-Programming Aptitude Test](https://www.kent.ac.uk/ces/tests/computer-test.html), created by Bruce Woodcock at the University of Kent. Currently, the site requires registration and login to take the exam. Results stores the results in an SQLite Database for development or PostgreSQL in production.
 
 ## Setup for Web Development
 
