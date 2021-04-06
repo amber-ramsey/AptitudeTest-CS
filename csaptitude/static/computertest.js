@@ -454,7 +454,66 @@ const Questions = Object.freeze([
             "None of these"
         ],
         "Correct": 1
-    }
+    },
+
+    //Begin new questions
+
+    {
+        "image": "computer_test_spreadsheet.png",
+        "Question": "It is 4 o’clock.<br />What is the measure of the angle formed between the hour hand and the minute hand?",
+        "Choices": [
+            "90",
+            "180",
+            "30",
+            "60",
+            "120", //Correct Answer 3 o'clock is 90 degrees to move to 4 o'clock you add 30 degrees
+            "None of these"
+        ],
+        "Correct": 4
+    },
+
+    {
+        "image": "computer_test_spreadsheet.png",
+        "Question": "Three boys were lined up in a row. Dean(D) was to the left of Fred(F) but not necessarily next to him. The blue shirt boy was to the right of the white shirt boy. The black shirt boy was to the left of Henry(H). Henry was to the left of Fred.",
+        "Choices": [
+            "Henry, Fred, Dean",
+            "Fred, Dean, Henry",
+            "Dean, Henry, Fred", //Correct Answer
+            "Fred, Henry, Dean",
+            "Henry, Dean, Fred", 
+            "None of these"
+        ],
+        "Correct": 2
+    },
+
+    {
+        "image": "computer_test_spreadsheet.png",
+        "Question": "If an animal is in group A, they are also in group B."<br>"If the above statement is true, which of the follow statements must also be true?",
+        "Choices": [
+            "If an animal is in group B, they are also in group A.",
+            "If an animal is not in group B, it is not in group A.", //Correct Answer
+            "If an animal is not in group A, it is not in group B.",
+            "If an animal is in group B, it is not in group A.",
+            "If an animal is not in group B, it is in group A.", 
+            "None of these"
+        ],
+        "Correct": 1
+    },
+
+    {
+        "image": "computer_test_spreadsheet.png",
+        "Question": "All of Sarah's friends like to swim."<br>"If the above statement is true, which of the follow statements must also be true?",
+        "Choices": [
+            "If Jill is not Sarah's friend, then she does not like to swim.",
+            "If Laura likes to swim, then she is Sarah's friend.",
+            "If Mary likes to swim, then she is not Sarah's friend.",
+            "If Amanda is Sarah's friend, then she does not like to swim.",
+            "If Maddie does not like to swim, then she is not Sarah's friend.", //Correct Answer
+            "None of these"
+        ],
+        "Correct": 4
+    },
+
 ]);
 
 
