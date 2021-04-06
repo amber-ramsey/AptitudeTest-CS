@@ -7,7 +7,7 @@ from flask_login import login_user, current_user, logout_user, login_required
 from sqlalchemy import desc
 
 # Indexes of correct answers to test questions
-correctAnswers = [2, 0, 5, 1, 4, 5, 2, 2, 1, 3, 4, 0, 4, 2, 5, 3, 0, 2, 1, 5, 0, 1, 5, 4, 0, 1, 5, 2, 1, 4, 2, 1, 4]
+correctAnswers = [2, 0, 5, 1, 4, 5, 2, 2, 1, 3, 4, 0, 4, 2, 5, 3, 0, 2, 1, 5, 0, 1, 5, 4, 0, 1, 5, 2, 1, 3, 4, 2, 1, 4]
 
 @app.route('/')
 def home():

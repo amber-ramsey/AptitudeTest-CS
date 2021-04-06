@@ -460,7 +460,21 @@ const Questions = Object.freeze([
 
     {
         "image": "computer_test_spreadsheet.png",
-        "Question": "It is 4 o’clock.<br />What is the measure of the angle formed between the hour hand and the minute hand?",
+        "Question": "If BOOK = 47,  SEA = 28, and DOG = 29. What is the value of ADDRESS?",
+        "Choices": [
+            "88",
+            "90",
+            "82",
+            "77", //Correct Answer Here each letter's value is one more than its place in the alphabet. So A = 2, B =  3, C = 4 and so forth. ADDRESS = 2 + 5 + 5 + 19 + 6 + 20 + 20 = 77
+            "71",
+            "None of these"
+        ],
+        "Correct": 3
+    },
+
+    {
+        "image": "computer_test_spreadsheet.png",
+        "Question": "It is 4 o’clock. What is the measure of the angle formed between the hour hand and the minute hand?",
         "Choices": [
             "90",
             "180",
@@ -488,7 +502,7 @@ const Questions = Object.freeze([
 
     {
         "image": "computer_test_spreadsheet.png",
-        "Question": "If an animal is in group A, they are also in group B."<br>"If the above statement is true, which of the follow statements must also be true?",
+        "Question": "If an animal is in group A, they are also in group B."<br>"If the above statement is true, which of the following statements must also be true?",
         "Choices": [
             "If an animal is in group B, they are also in group A.",
             "If an animal is not in group B, it is not in group A.", //Correct Answer
@@ -502,7 +516,7 @@ const Questions = Object.freeze([
 
     {
         "image": "computer_test_spreadsheet.png",
-        "Question": "All of Sarah's friends like to swim."<br>"If the above statement is true, which of the follow statements must also be true?",
+        "Question": "All of Sarah's friends like to swim."<br>"If the above statement is true, which of the following statements must also be true?",
         "Choices": [
             "If Jill is not Sarah's friend, then she does not like to swim.",
             "If Laura likes to swim, then she is Sarah's friend.",
