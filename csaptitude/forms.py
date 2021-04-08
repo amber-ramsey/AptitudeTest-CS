@@ -7,6 +7,7 @@ from csaptitude.models import User
 
 
 class TestRegistrationForm(FlaskForm):
+	name = StringField('Name', validators=[DataRequired()])
 	studentId = IntegerField('Student ID Number',
 		validators=[DataRequired(), NumberRange(min=10000, max=400000, message="Not a valid Student ID Number")])
 	email = StringField('Email', validators=[DataRequired(), Email()])

@@ -1,5 +1,5 @@
 const Timer = (function() {
-    const TEST_LENGTH = 1500; // test length in seconds, 25 min = 1500 sec
+    const TEST_LENGTH = 1800; // test length in seconds, 30 min = 1800 sec
 
     // Time at start of test in seconds.
     // Note: getTime is no. of milliseconds elapsed from date object
@@ -94,6 +94,8 @@ const Questions = Object.freeze([
     },
 
     //PROPER TEST QUESTIONS
+
+    //1
     {
         "image": "computer_test_syntax_checking.png",
         "Question": "Above are 6 rows containing two identical sets of characters, but in one row, one character in the two sets is different.<br /><br />Which row has the difference?",
@@ -108,6 +110,7 @@ const Questions = Object.freeze([
         "Correct": 1
     },
 
+    //2
     {
         "image": "computer_test_syntax_2.png",
         "Question": "Above are 6 rows containing two identical sets of characters, but in one row, one character in the two sets is different.<br /><br />Which row has the difference?",
@@ -122,6 +125,7 @@ const Questions = Object.freeze([
         "Correct": 4
     },
 
+    //3
     {
         "image": "computer_test_syntax_3.png",
         "Question": "Above are 6 rows containing two identical sets of characters, but in one row, one character in the two sets is different.<br /><br />Which row has the difference?",
@@ -136,6 +140,7 @@ const Questions = Object.freeze([
         "Correct": 5
     },
 
+    //4
     {
         "Question": "Alan thinks of a number.<br />He squares it, then takes away 5, next multiplies it by 4, takes away 7, divides it by 3 and finally adds 6.<br />His answer is 9.<br /><br />What number did Alan start with?",
         "Choices": [
@@ -149,6 +154,7 @@ const Questions = Object.freeze([
         "Correct": 2
     },
 
+    //5
     {
         "Question": "If the hour hand of a clock is turned anticlockwise from 2 pm to 9 am, through how many degrees will it have turned?",
         "Choices": [
@@ -162,6 +168,7 @@ const Questions = Object.freeze([
         "Correct": 2
     },
 
+    //6
     {
         "image": "computer_test_triangles.svg",
         "Question": "What percentage of this shape is blue (to nearest percent)?",
@@ -176,6 +183,7 @@ const Questions = Object.freeze([
         "Correct": 1
     },
 
+    //7
     {
         "image": "computer_test_alphabet.svg",
         "Question": "If ADD = 9, BAD = 7, and CAD = 8,<br /><br />what is the value of ADA?",
@@ -190,6 +198,7 @@ const Questions = Object.freeze([
         "Correct": 3
     },
 
+    //8
     {
         "image": "computer_test_alphabet.svg",
         "Question": "If BAD = 10, DAC = 11, and CGI = 22,<br /><br />what is the value of OCCAM?",
@@ -204,6 +213,7 @@ const Questions = Object.freeze([
         "Correct": 4
     },
 
+    //9
     {
         "image": "computer_test_alphabet.svg",
         "Question": "If DATA = 52, CACHE = 40 and BIT = 62,<br /><br />what is the value of BABBAGE?",
@@ -218,6 +228,7 @@ const Questions = Object.freeze([
         "Correct": 0
     },
 
+    //10
     {
         "Question": "You are facing North. Turn 90 degrees left. Turn 180 degrees right.<br />Reverse direction. Turn 45 degrees left. Reverse direction. Turn 270 degrees right.<br /><br />In which direction are you now facing?",
         "Choices": [
@@ -231,6 +242,7 @@ const Questions = Object.freeze([
         "Correct": 4
     },
 
+    //11
     {
         "image": "computer_test_flight_tickets.svg",
         "Question": "What would the code be for a flight to Paris at 5am for a vegetarian 8 year old girl traveling economy class?",
@@ -245,6 +257,7 @@ const Questions = Object.freeze([
         "Correct": 2
     },
 
+    //12
     {
         "Question": "Three computers were lined up in a row. The Dell (D) was to the left of the Viglen (V) but not necessarily next to it. The blue computer was to the right of the white computer. The black computer was to the left of the Hewlett Packard (HP) PC. The Hewlett Packard was to the left of the Viglen (V).<br /><br />What was the order of the computers from left to right?",
         "Choices": [
@@ -258,6 +271,7 @@ const Questions = Object.freeze([
         "Correct": 5
     },
 
+    //13
     {
         "Question": "Tim was given a large bag of sweets and ate one third of the sweets before stopping as he was feeling sick.<br />The next day he ate one third of the remaining sweets and the following day he ate one third of the remainder, before counting the sweets he had left which totaled eight.<br /><br />How many sweets was he given in the beginning?",
         "Choices": [
@@ -271,6 +285,7 @@ const Questions = Object.freeze([
         "Correct": 3
     },
 
+    //14
     {
         "Question": "In a counting system used by intelligent apes.<br />A banana = 1<br />6 is represented by an orange and 2 bananas<br />An orange is worth half a mango<br /><br />What is the value of two mangos, an orange and a banana?",
         "Choices": [
@@ -284,6 +299,7 @@ const Questions = Object.freeze([
         "Correct": 0
     },
 
+    //15
     {
         "Question": "In a counting system used by intelligent apes, a banana = 1<br />6 is represented by an orange and 2 bananas<br />An orange is worth half a mango<br /><br />What is the value in fruit, of two mangos with an orange, divided by an orange with a banana?",
         "Choices": [
@@ -297,6 +313,7 @@ const Questions = Object.freeze([
         "Correct": 2
     },
 
+    //16
     {
         "image": "computer_test_alphabet.svg",
         "Question": "If the code for JAVA is LCXC,<br />what is the code for BASIC?",
@@ -311,6 +328,7 @@ const Questions = Object.freeze([
         "Correct": 1
     },
 
+    //17
     {
         "image": "computer_test_alphabet.svg",
         "Question": "If the code for FORTRAN is GMUPWUU,<br />what is the code for PASCAL?",
@@ -325,6 +343,7 @@ const Questions = Object.freeze([
         "Correct": 5
     },
 
+    //18
     {
         "image": "computer_test_alphabet.svg",
         "Question": "If the code for PHP is QLY.<br />What is the code for SQL?",
@@ -339,6 +358,7 @@ const Questions = Object.freeze([
         "Correct": 0
     },
 
+    //19
     {
         "image": "computer_test_grid.svg",
         "Question": "You start in square E6 facing East. Move 3 squares forward.<br />Turn 90 degrees clockwise, move two squares forward, turn 180 degrees anticlockwise.<br />Move 5 squares forward, turn 90 degrees anticlockwise.<br />Move 4 squares forwards, turn 90 degrees clockwise.<br />Move two squares backwards.<br />What is the Y COORDINATE of the square you are now in?",
@@ -353,6 +373,7 @@ const Questions = Object.freeze([
         "Correct": 1
     },
 
+    //20
     {
         "image": "computer_test_grid.svg",
         "Question": "You start in square E6 facing South West. Move three squares forward.<br />Rotate 135 degrees clockwise. Move 4 squares forward.<br />Rotate 45 degrees clockwise. Move 2 squares forward.<br />Rotate 90 degrees anticlockwise and move 4 squares backwards.<br /><br />What is the X Coordinate of the square you are now in?",
@@ -367,6 +388,7 @@ const Questions = Object.freeze([
         "Correct": 5
     },
 
+    //21
     {
         "Question": "What is the angle between the hands of a clock at 10:30?",
         "Choices": [
@@ -380,6 +402,7 @@ const Questions = Object.freeze([
         "Correct": 4
     },
 
+    //22
     {
         "image": "computer_test_chocolate.png",
         "Question": "What percentage weight of chocolate out of the original kilogram will be contained in COMPLETELY FILLED boxes (i.e. those containing a full 6 bags)?",
@@ -394,6 +417,7 @@ const Questions = Object.freeze([
         "Correct": 0
     },
 
+    //23
     {
         "image": "computer_test_spreadsheet.png",
         "Question": "In these questions, the coordinates of the square or cell refer to its contents.<br /><br />What is A4 multiplied by D3 divided by C2?",
@@ -408,6 +432,7 @@ const Questions = Object.freeze([
         "Correct": 1
     },
 
+    //24
     {
         "image": "computer_test_spreadsheet.png",
         "Question": "Store the answer to B4  plus  A2  in  F1.<br />Store the answer to  A4  minus  D2  in  F3<br />Multiply  F1  by  F3.<br /><br />What is the final answer?",
@@ -422,6 +447,7 @@ const Questions = Object.freeze([
         "Correct": 5
     },
 
+    //25
     {
         "image": "computer_test_spreadsheet.png",
         "Question": "STEP 1: Multiply C3 by D4 and store the result in F4<br />STEP 2: Multiply F4 by 3, store the result in F4 then add 1 to E3.<br />STEP 3: Repeat STEP 2 until the value of E3 equals 3 then stop.<br /><br />What is the value of F4?",
@@ -436,6 +462,7 @@ const Questions = Object.freeze([
         "Correct": 2
     },
 
+    //26
     {
         "image": "computer_test_spreadsheet.png",
         "Question": "Add A1 + B3 + C4 + D2 and put the " +
@@ -458,8 +485,9 @@ const Questions = Object.freeze([
 
     //Begin new questions
 
+    //27
     {
-        "image": "computer_test_spreadsheet.png",
+        "image": "computer_test_alphabet.svg",
         "Question": "If BOOK = 47,  SEA = 28, and DOG = 29. What is the value of ADDRESS?",
         "Choices": [
             "88",
@@ -472,6 +500,7 @@ const Questions = Object.freeze([
         "Correct": 3
     },
 
+    //28
     {
         "image": "computer_test_spreadsheet.png",
         "Question": "It is 4 o’clock. What is the measure of the angle formed between the hour hand and the minute hand?",
@@ -486,6 +515,7 @@ const Questions = Object.freeze([
         "Correct": 4
     },
 
+    //29
     {
         "image": "computer_test_spreadsheet.png",
         "Question": "Three boys were lined up in a row. Dean(D) was to the left of Fred(F) but not necessarily next to him. The blue shirt boy was to the right of the white shirt boy. The black shirt boy was to the left of Henry(H). Henry was to the left of Fred.",
@@ -500,9 +530,10 @@ const Questions = Object.freeze([
         "Correct": 2
     },
 
+    //30
     {
         "image": "computer_test_spreadsheet.png",
-        "Question": "If an animal is in group A, they are also in group B."<br>"If the above statement is true, which of the following statements must also be true?",
+        "Question": "If an animal is in group A, they are also in group B.<br>If the above statement is true, which of the following statements must also be true?",
         "Choices": [
             "If an animal is in group B, they are also in group A.",
             "If an animal is not in group B, it is not in group A.", //Correct Answer
@@ -514,9 +545,10 @@ const Questions = Object.freeze([
         "Correct": 1
     },
 
+    //31
     {
         "image": "computer_test_spreadsheet.png",
-        "Question": "All of Sarah's friends like to swim."<br>"If the above statement is true, which of the following statements must also be true?",
+        "Question": "All of Sarah's friends like to swim.<br>If the above statement is true, which of the following statements must also be true?",
         "Choices": [
             "If Jill is not Sarah's friend, then she does not like to swim.",
             "If Laura likes to swim, then she is Sarah's friend.",
@@ -550,11 +582,11 @@ const confirmNavigationAway = (event) => {
 
 function NextQuest()
 {
-    if (num >= 28) {
+    if (num >= 34) {
         window.alert("That was the last question.  " +
             "Either click on PREVIOUS QUESTION to attempt questions you may " +
             "have missed out, or GET YOUR SCORE if you wish to finish.");
-        num = 28;
+        num = 34;
     }
     else {
         ++num;
@@ -649,7 +681,7 @@ function showQuestion(num)
         questionNumEl.innerHTML = `Example ${num + 1} of 3`;
     }
     else {
-        questionNumEl.innerHTML = `Question ${num - 2} of 26`;
+        questionNumEl.innerHTML = `Question ${num - 2} of 31`;
     }
 
     // Clear the score box
@@ -693,7 +725,7 @@ function showQuestion(num)
 
     // Disable buttons when they result at the beginning or end of text.
     window.document.testForm.prevquestbutton.disabled = num === 3 || num <= 0;
-    window.document.testForm.nextquestbutton.disabled = num >= 28;
+    window.document.testForm.nextquestbutton.disabled = num === 33;
     window.document.testForm.submit.disabled = num < 3;
 
     questionStartTime = Date.now(); // Note the time on this question.
