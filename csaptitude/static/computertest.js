@@ -477,7 +477,7 @@ const Questions = Object.freeze([
             "83",//Correct Answer
             "96",
             "95",
-            "96",
+            "99",//changed from Kent State due to it being a repeat
             "None of these"
         ],
         "Correct": 1
