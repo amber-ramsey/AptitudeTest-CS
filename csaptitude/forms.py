@@ -50,8 +50,8 @@ class TestResultsForm(FlaskForm):
 
 	def validate_answers(self, answers):
 		answers = answers.data.split(',')
-		if len(answers) != 29:
-			raise ValidationError(f'{len(answers)} answers submitted. Expected 29.')
+		if len(answers) != 34:
+			raise ValidationError(f'{len(answers)} answers submitted. Expected 34.')
 		else:
 			for ans in answers:
 				if ans not in ['', '0', '1', '2', '3', '4', '5']:
@@ -64,6 +64,6 @@ class TestResultsForm(FlaskForm):
 			raise ValidationError(f'"{elapsedTime.data}" is an invalid number of milliseconds for the elapsed time.')
 			return
 
-		if (duration < 30 or duration > 1560):
+		if (duration < 30 or duration > 1800):
 			raise ValidationError('You completed the test too quickly or too slowly.')
 

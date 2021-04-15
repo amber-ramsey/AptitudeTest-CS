@@ -15,7 +15,8 @@
 	{% endif %}
 
 	<div class="cited">
-		<p><strong>As mentioned before, this test is for practice only, so you should not regard
+		<p>
+			<strong>As mentioned before, this test is for practice only, so you should not regard
 			your result as of importance </strong>chiefly because <strong>the test was not taken under
 				proper test conditions</strong> e.g. in a silent room with no disturbances. Your
 			performance can also be distorted if you have a cold, or have not slept well. Also,
@@ -26,329 +27,398 @@
 				subject</strong> may change your performance &mdash; for example <strong>scientists</strong> are likely to do
 			better on mathematical tests and <strong>humanities students</strong> on verbal tests. Even your ability to
 			use a mouse may influence your score! Having said all this it is still natural for you to
-			want some feedback on your performance. </p>
+			want some feedback on your performance. 
+		</p>
 		<h2>Score</h2>
 		<p>For more information about programming tests click on the <strong>programming tests</strong> tab on Kent University's <a href="https://www.kent.ac.uk/ces/tests/psychotests.html#PROGRAMMING">psychometric tests page</a>.</p>
+		<!-- The numbers have been changed to accommodate for the increase of questions, but are the same scale as the original test -->
 		<ul>
-			<li><strong>19 or above.</strong> This is an <strong>above average score</strong> for graduates. See our <a href="https://www.charlestonsouthern.edu/computerscience/majors.php"><strong>Computer-Related Majors</strong></a>. The next step might be to<a href="https://www.python.org/"> <strong>learn Python</strong></a><strong>. </strong></li>
-			<li><strong>13 - 18.</strong> This is in the <strong>average</strong> group compared to other graduates. Whilst this test is only a rough guide, if you scored in this bracket, it suggests you may not find it easy to do well in technical computing jobs such as programming and software engineering, but may be fine in <a href="https://www.charlestonsouthern.edu/computerscience/majors.php">less technical IT roles</a>.</li>
-			<li><strong>12 or below</strong>. This is <strong>below the typical score</strong> of graduates, but remember that a number of factors may have distorted your score &mdash; see above for some of these factors. You may wish to discuss your results with a careers adviser. See Kent University's page on <a href="https://www.kent.ac.uk/ces/sk/computing-skills.html">ways to improve your computing skills</a>.</li>
+			<li><strong>22 or above.</strong> This is an <strong>above average score</strong> for graduates. See our <a href="https://www.charlestonsouthern.edu/computerscience/majors.php"><strong>Computer-Related Majors</strong></a>. The next step might be to<a href="https://www.python.org/"> <strong>learn Python</strong></a><strong>. </strong></li>
+			<li><strong>15 - 21.</strong> This is in the <strong>average</strong> group compared to other graduates. Whilst this test is only a rough guide, if you scored in this bracket, it suggests you may not find it easy to do well in technical computing jobs such as programming and software engineering, but may be fine in <a href="https://www.charlestonsouthern.edu/computerscience/majors.php">less technical IT roles</a>.</li>
+			<li><strong>14 or below</strong>. This is <strong>below the typical score</strong> of graduates, but remember that a number of factors may have distorted your score &mdash; see above for some of these factors. You may wish to discuss your results with a careers adviser. See Kent University's page on <a href="https://www.kent.ac.uk/ces/sk/computing-skills.html">ways to improve your computing skills</a>.</li>
 		</ul>
 		<h2>Solutions for Example Questions</h2>
 		<table class="table">
-		<thead>
-			<tr>
-				<th>Question</th>
-				<th>Answers</th>
-				<th>Solutions to Example Questions</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>1</td>
-				<td><strong>4</strong></td>
-				<td><p><a href="https://en.wikipedia.org/wiki/Grace_Hopper">Grace</a> thought of a number, added 7, multiplied by 3, took away 5 and divided by 4 to give an answer of 7. What was the starting number?<br />
-					You need to work backwards: multiply 7 by 4, add 5, divide by 3, take away 7 to reach the starting number.<br />
-					<strong>4</strong> + 7 = 11 &times; 3 = 33 - 5 = 28 / 4 = 7</p></td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td><strong>10</strong></td>
-				<td><p>
-					<img src="{{url_for('static', filename='img/computer_test_spreadsheet.png')}}" alt="spreadsheet" width="633" height="269" /><br />
-					What is B1 + C2?<br />
-					B1 = 7 and C2 = 3, therefore B1 + C2 = <strong>10</strong></p></td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td><strong>None of these</strong></td>
-				<td><p>Multiply A1 by B2. Put the answer in E1.<br />
-					Now divide E1 by D4.<br />
-					What is the answer?<br />
-					A1 = 9, B2 = 2, therefore E1 = 9 &times; 2 = 18<br />
-					D4 = 3. 18 divided by 3 = <strong>6</strong>. <br />
-					6 is not one of the answers listed, so you must answer <strong>"None of these"</strong></p></td>
-			</tr>
-		</tbody>
-	</table>
-	<h2>Solutions for Test Questions</h2>
+			<thead>
+				<tr>
+					<th>Question</th>
+					<th>Answers</th>
+					<th>Solutions to Example Questions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td><strong>4</strong></td>
+					<td><p><a href="https://en.wikipedia.org/wiki/Grace_Hopper">Grace</a> thought of a number, added 7, multiplied by 3, took away 5 and divided by 4 to give an answer of 7. What was the starting number?<br />
+						You need to work backwards: multiply 7 by 4, add 5, divide by 3, take away 7 to reach the starting number.<br />
+						<strong>4</strong> + 7 = 11 &times; 3 = 33 - 5 = 28 / 4 = 7</p></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td><strong>10</strong></td>
+					<td><p>
+						<img src="{{url_for('static', filename='img/computer_test_spreadsheet.png')}}" alt="spreadsheet" width="633" height="269" /><br />
+						What is B1 + C2?<br />
+						B1 = 7 and C2 = 3, therefore B1 + C2 = <strong>10</strong></p></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td><strong>None of these</strong></td>
+					<td><p>Multiply A1 by B2. Put the answer in E1.<br />
+						Now divide E1 by D4.<br />
+						What is the answer?<br />
+						A1 = 9, B2 = 2, therefore E1 = 9 &times; 2 = 18<br />
+						D4 = 3. 18 divided by 3 = <strong>6</strong>. <br />
+						6 is not one of the answers listed, so you must answer <strong>"None of these"</strong></p></td>
+				</tr>
+			</tbody>
+		</table>
+		<h2>Solutions for Test Questions</h2>
 		<table class="table">
-		<thead>
-			<tr>
-				<th>Question</th>
-				<th>Answer</th>
-				<th>Solutions to Test Questions</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class="{% if correct %}table-{{'success' if correct[0] else 'danger'}}{% endif %}">
-				<td>1</td>
-				<td>2</td>
-				<td>Above are 6 rows containing two identical sets of characters, but in one row, one character in the two sets is different. Which row has the difference?<br />
-					2) <span style="margin-right:3em; font-family: monospace;">iqtgi<strong style="background: yellow">w</strong>egasdio</span> <span style="font-family: monospace;">iqtgi<strong style="background: yellow">y</strong>egasdio</span><br />
-				These first three questions involve basic syntax checking.</td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[1] else 'danger'}}{% endif %}">
-				<td>2</td>
-				<td>5</td>
-				<td>Above are 6 rows containing two identical sets of characters, but in one row, one character in the two sets is different. Which row has the difference?<br />
-					5) <span style="margin-right:3em; font-family: monospace;">dsNvn(Pos\<strong style="background: yellow">o</strong>;l\md;)</span> <span style="font-family: monospace;">dsNvn(Pos\<strong style="background: yellow">e</strong>;l\md;)</span> <br /></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[2] else 'danger'}}{% endif %}">
-				<td>3</td>
-				<td>6</td>
-				<td>Above are 6 rows containing two identical sets of characters, but in one row, one character in the two sets is different. Which row has the difference?<br />
-					6) <span style="margin-right:3em; font-family: monospace;">ladnl:vdlne<strong style="background: yellow">,</strong>842tybqi\m</span> <span style="font-family: monospace;">ladnl:avdlne<strong style="background: yellow">;</strong>842tybqi\m</span></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[3] else 'danger'}}{% endif %}">
-				<td>4</td>
-				<td><strong>3</strong></td>
-				<td><a href="https://en.wikipedia.org/wiki/Turing">Alan</a> thinks of a number. He squares it, then takes away 5, next multiplies it by 4, takes away 7, divides it by 3 and finally adds 6. His answer is 9.<br />
-					What number did he start with?<br />
-					Working backwards from the answer.<br />
-					<strong>9</strong> - 6 = 3 &times; 3 = 9 + 7 = 16 /4 = 4 + 5 = 9. Square root of 9 = <strong>3</strong></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[4] else 'danger'}}{% endif %}">
-				<td>5</td>
-				<td><strong>150</strong></td>
-				<td>If the hour hand of a clock is turned anticlockwise from 2 pm to 9 am, through how many degrees will it have turned?<br />
-					The clock hand moves through 5 hours. Each hour division subtends 30 degrees (360 / 12). Therefore the hand will have turned 5 &times; 30 degrees = <strong>150 degrees</strong> in total.</td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[5] else 'danger'}}{% endif %}">
-				<td>6</td>
-				<td><strong>63%</strong></td>
-				<td><p><img src="{{url_for('static', filename='img/computer_test_triangles.svg')}}" alt="triangles" width="632" height="269"></p>
-					<p>What percentage of this shape is blue (to nearest percent)?<br />
-						There
-						are 80 triangles altogether. 50 of which are blue, therefore 50/80 &times; 100 = 62.5% This rounds up to <strong>63%</strong></p></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[6] else 'danger'}}{% endif %}">
-				<td>7</td>
-				<td><strong>6</strong></td>
-				<td><p>If ADD = 9, BAD = 7 and CAD = 8 what is the value of <a href="https://en.wikipedia.org/wiki/Ada_lovelace">ADA</a>?<br />
-					Each letter here has the same value as its place in the alphabet. So A = 1, B = 2 etc.<br />
-					A = 1 D = 4 and A = 1 so ADA = 1 + 4 + 1 = <strong>6</strong></p></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[7] else 'danger'}}{% endif %}">
-				<td>8</td>
-				<td><strong>40</strong></td>
-				<td><p>If BAD = 10, DAC = 11, and CGI = 22 what is the value of <a href="https://en.wikipedia.org/wiki/Occam_programming_language">OCCAM</a>?<br />
-					Each letter has the same value as its place in the alphabet plus 1. So A = 2, B = 3 etc.<br />
-					O = 16 (15th letter of the alphabet) and M = 14 (13th letter)<br />
-					So OCCAM = 16 + 4 + 4 + 2 + 14 =<strong> 40</strong></p></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[8] else 'danger'}}{% endif %}">
-				<td>9</td>
-				<td><strong>40</strong></td>
-				<td>If DATA = 52, CACHE = 40 and BIT = 62. What is the value of <a href="https://en.wikipedia.org/wiki/Babbage">BABBAGE</a>?<br />
-					Here each letter has double the value of its place in the alphabet. So A = 2, B= 4 and so forth.<br />
-					So BABBAGE = 4 + 2 + 4 + 4 + 2 + 14 + 10 = <strong>40</strong><br /></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[9] else 'danger'}}{% endif %}">
-				<td>10</td>
-				<td><strong>NW</strong></td>
-				<td><p>You are facing North. Turn 90 degrees left = W<br />
-					Turn 180 degrees right = E Reverse direction = W again<br />
-					Turn 45 degrees left = SW Reverse direction = NE Turn 270 degrees right. = NW<br />
-					In which direction are you now facing?<br />
-					N W E W SW NE <strong>NW</strong></p></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[10] else 'danger'}}{% endif %}">
-				<td>11</td>
-				<td><strong>bykR</strong></td>
-				<td>Flight tickets for an airline are coded as follows:<br />
-					UK Destinations are coded A, Flights to Europe are coded B, Asian Destinations C, and the Americas D. <br />
-					If a flight takes place between 10 pm and 6 am the same code are used but with lower case letters (a,b,c, and d)<br />
-					Male passengers are coded X and female passengers are coded Y. Children are coded by the same letters in lower case (x.y)<br />
-					Meals are coded as follows:<br />
-					European meal G, Asian Meal H, Vegetarian Meal K. Children's meals coded by the same letters in lower case (g,h,k)<br />
-					First Class passengers are coded P, Business Class Q and economy R<br />
-					What would the code be for a flight to Paris at 5am for a vegetarian 8 year old girl traveling economy class?<br />
-					European Flight before 6 am = b. Female child = y, Vegetarian children's meal = k, Economy class= R<br />
-					Therefore code is<strong> bykR</strong></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[11] else 'danger'}}{% endif %}">
-				<td>12</td>
-				<td><strong>D,HP,V</strong></td>
-				<td><p>Three computers were lined up in a row. The Dell was to the left of the Viglen but not necessarily next to it. The blue computer was to the right of the white computer. The black computer was to the left of the Hewlett Packard PC. The Hewlett Packard was to the left of the Viglen.<br />
-					What was the order of the computers?</p>
-					<table width="80%" cellpadding="1">
-						<tbody><tr>
-							<td><strong>Computer</strong></td>
-							<td><strong>Dell </strong></td>
-							<td><strong>Hewlett Packard</strong></td>
-							<td><strong>Viglen</strong></td>
-						</tr>
-						<tr>
-							<td><strong>Operating System</strong></td>
-							<td> Black</td>
-							<td>White</td>
-							<td> Blue</td>
-						</tr>
-					</tbody></table></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[12] else 'danger'}}{% endif %}">
-				<td>13</td>
-				<td><strong>27</strong></td>
-				<td><p><a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">Tim</a> was given a large bag of sweets and ate one third of the sweets before stopping as he was feeling sick. The next day he ate one third of the remaining sweets and the following day he ate one third of the remainder, before counting the sweets he had left which totaled eight. How many sweets was he given in the beginning?<br />
-					2/3 &times; 2/3 &times; 2/3 = 8/<strong>27</strong></p></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[13] else 'danger'}}{% endif %}">
-				<td>14</td>
-				<td><strong>21</strong></td>
-				<td>In a counting system used by intelligent apes.<br />
-					A banana = 1<br />
-					6 is represented by an orange and 2 bananas<br />
-					An orange is worth half a mango<br />
-					What is the value of two mangos, an orange and a banana?<br />
-					Banana = 1 orange = 4 mango = 8<br />
-					8 + 8 + 4 + 1 = <strong>21</strong></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[14] else 'danger'}}{% endif %}">
-				<td>15</td>
-				<td><strong>Orange</strong></td>
-				<td>What is two mangos and an orange, divided by an orange with a banana?<br />
-					<strong>An orange</strong><br />
-					(8 + 8 + 4) / (4 + 1) = 4 = <strong>orange</strong></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[15] else 'danger'}}{% endif %}">
-				<td>16</td>
-				<td><strong>DCUKE</strong></td>
-				<td><p>If the code for <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">JAVA</a> is LCXC what is the code for <a href="https://en.wikipedia.org/wiki/BASIC">BASIC</a>?<br />
-					Each letter in JAVA is moved forward in the alphabet by two letters:<br />
-					J
-					+ 2 = L , A + 2 = C , V + 2 = X, A + 2 C<br />
-					Moving each letter in BASIC forward by two we get<strong> DCUKE</strong></p></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[16] else 'danger'}}{% endif %}">
-				<td>17</td>
-				<td><strong>None of these</strong></td>
-				<td><p>If the code for <a href="https://en.wikipedia.org/wiki/Fortran">FORTRAN</a> is GMUPWUU&nbsp; what is the code for <a href="https://en.wikipedia.org/wiki/Pascal_(programming_language)">PASCAL</a>?<br />
-					Here the sequence is more complex: +1, -2, +3, -4, +5, -6<br />
-					F + 1 = G, O - 2 = M, R +3 = U, T - 4 = P, R + 5 = W, A - 6 = U, N + 7 = U<br />
-					Applying the same process to PASCAL we get<strong> QYVYFF</strong>, which is not one of the listed solutions, so the answer is none of these.&nbsp;</p></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[17] else 'danger'}}{% endif %}">
-				<td>18</td>
-				<td><strong>TUU</strong></td>
-				<td>If the code for <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> is QLY. What is the code for <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> ?<br />
-					Here the change is +1, +4, +9 (square numbers)<br />
-					So applying the same process to SQL we get <strong>TUU&nbsp;</strong></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[18] else 'danger'}}{% endif %}">
-				<td>19</td>
-				<td><strong>7 </strong></td>
-				<td><p><img src="{{url_for('static', filename='img/computer_test_grid.svg')}}" alt="squares" width="632" height="269"></p>
-					<p>You start in square E6 facing East. Move 3 squares forward = H6<br />
-						Turn 90 degrees clockwise, move two squares forward = H4.<br />
-						Turn 180 degrees anticlockwise. Move 5 squares forward = H9<br />
-						Turn 90 degrees anticlockwise. Move 4 squares forwards = D9.<br />
-						Turn 90 degrees clockwise. Move two squares backwards = <strong>D7</strong><br />
-						What is the Y COORDINATE of the square you are now in?<br />
-						<strong>7</strong></p></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[19] else 'danger'}}{% endif %}">
-				<td>20</td>
-				<td><strong>H</strong></td>
-				<td><p>You start in square E6 facing South West. Move three squares forward = B3 Facing SW<br />
-					Rotate 135 degrees clockwise. Move 4 squares forward. = B7 Facing N<br />
-					Rotate 45 degrees clockwise. Move 2 squares forward = D9 Facing NE<br />
-					Rotate 90 degrees anticlockwise and move 4 squares backwards. H5 Facing NW<br />
-					What is the X Coordinate of the square you are now in?<strong> H<br />
-						</strong>C D E F G<strong> H</strong></p></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[20] else 'danger'}}{% endif %}">
-				<td>21</td>
-				<td><strong>135</strong></td>
-				<td>What is the angle between the hands of a clock at 10.30?<br />
-					The minute hand will be at 6 o'clock = 180 degrees<br />
-					The hour hand will be half way between 10 and 11 o'clock. <br />
-					Each hour subtends 30 degrees so the hour hand will be at 30 &times; 10.5 degrees <br />
-					= 315 degrees.<br />
-					So the difference between the two hands is 315 - 180 = <strong>135 degrees.</strong></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[21] else 'danger'}}{% endif %}">
-				<td>22</td>
-				<td><strong>58%</strong></td>
-				<td>In a chocolate factory, a machine takes a 1 kg block of chocolate. It then divides this into rectangles each weighing 10g. These rectangles are then stamped into disks of chocolate each weighing 6g with the remaining chocolate discarded. These chocolate disks are then packed into bags of 4 which are sealed and finally packed into boxes, each containing 6 bags ready for dispatch to the shops. What weight of chocolate out of the original kilogram will be contained in COMPLETELY FILLED boxes (i.e. those containing a full 6 bags)?<br />
-					<br />
-					1000 g of chocolate is made into 100 rectangles of chocolate each weighting 10g. <br />
-					These are then stamped into 100 disks of 6g each.<br />
-					4 disks are packed into each bag and then 6 bags are placed into each box. <br />
-					Therefore there are 24 disks in each box. <br />
-					As there are 100 disks in total produced from the 1 Kg of chocolate, there will therefore be four boxes with 4 disks left over. <br />
-					These 4 boxes contain 96 disks each weighing 6g. <br />
-					So the total weight of chocolate in the boxes will be 96 &times; 6g = 576g.&nbsp; <strong><br />
-					</strong>Converting to a percentage: 576/1000 &times; 100 = 57.6% which rounds to <strong>58%</strong></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[22] else 'danger'}}{% endif %}">
-				<td>23</td>
-				<td><strong>26</strong></td>
-				<td><p><img src="{{url_for('static', filename='img/computer_test_spreadsheet.png')}}" alt="spreadsheet" width="633" height="269"></p>
-					<p>What is A4 multiplied by D3 divided by C2?<br />
-						A4 = 13, D3 = 6, C2 = 3. 13 &times; 6 = 78 ÷ 3 = <strong>26</strong></p></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[23] else 'danger'}}{% endif %}">
-				<td>24</td>
-				<td><strong>None of these</strong></td>
-				<td><p>Store the answer to B4 plus A2 in F1. Store the answer to A4 minus D2 in F3. Multiply F1 by F3. What is the final answer?<br />
-					<br />
-					Store the answer to B4 plus A2 in F1. <br />
-					B4 + A2 = 9 + 8 = 17 = F1<br />
-					Store the answer to A4 minus D2 in F3. <br />
-					13 - 7 = 6 = F3<br />
-					Multiply F1 by F3. <br />
-					17 &times; 6 = <strong>102</strong>. None of the given solutions is 102, so the answer is <strong>"None of these"</strong></p></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[24] else 'danger'}}{% endif %}">
-				<td>25</td>
-				<td><strong>405</strong></td>
-				<td>STEP 1: Multiply C3 by D4 and store the result in F4<br />
-					STEP 2: Multiply F4 by 3 then add 1 to E3.<br />
-					STEP 3: Repeat STEP 2 until the value of E3 equals 3 then stop. <br />
-					What is the value of F4?<strong><br />
+			<thead>
+				<tr>
+					<th>Question</th>
+					<th>Answer</th>
+					<th>Solutions to Test Questions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="{% if correct %}table-{{'success' if correct[0] else 'danger'}}{% endif %}">
+					<td>1</td>
+					<td>2</td>
+					<td>Above are 6 rows containing two identical sets of characters, but in one row, one character in the two sets is different. Which row has the difference?<br />
+						2) <span style="margin-right:3em; font-family: monospace;">iqtgi<strong style="background: yellow">w</strong>egasdio</span> <span style="font-family: monospace;">iqtgi<strong style="background: yellow">y</strong>egasdio</span><br />
+					These first three questions involve basic syntax checking.</td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[1] else 'danger'}}{% endif %}">
+					<td>2</td>
+					<td>5</td>
+					<td>Above are 6 rows containing two identical sets of characters, but in one row, one character in the two sets is different. Which row has the difference?<br />
+						5) <span style="margin-right:3em; font-family: monospace;">dsNvn(Pos\<strong style="background: yellow">o</strong>;l\md;)</span> <span style="font-family: monospace;">dsNvn(Pos\<strong style="background: yellow">e</strong>;l\md;)</span> <br /></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[2] else 'danger'}}{% endif %}">
+					<td>3</td>
+					<td>6</td>
+					<td>Above are 6 rows containing two identical sets of characters, but in one row, one character in the two sets is different. Which row has the difference?<br />
+						6) <span style="margin-right:3em; font-family: monospace;">ladnl:vdlne<strong style="background: yellow">,</strong>842tybqi\m</span> <span style="font-family: monospace;">ladnl:avdlne<strong style="background: yellow">;</strong>842tybqi\m</span></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[3] else 'danger'}}{% endif %}">
+					<td>4</td>
+					<td><strong>3</strong></td>
+					<td><a href="https://en.wikipedia.org/wiki/Turing">Alan</a> thinks of a number. He squares it, then takes away 5, next multiplies it by 4, takes away 7, divides it by 3 and finally adds 6. His answer is 9.<br />
+						What number did he start with?<br />
+						Working backwards from the answer.<br />
+						<strong>9</strong> - 6 = 3 &times; 3 = 9 + 7 = 16 /4 = 4 + 5 = 9. Square root of 9 = <strong>3</strong></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[4] else 'danger'}}{% endif %}">
+					<td>5</td>
+					<td><strong>150</strong></td>
+					<td>If the hour hand of a clock is turned anticlockwise from 2 pm to 9 am, through how many degrees will it have turned?<br />
+						The clock hand moves through 5 hours. Each hour division subtends 30 degrees (360 / 12). Therefore the hand will have turned 5 &times; 30 degrees = <strong>150 degrees</strong> in total.</td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[5] else 'danger'}}{% endif %}">
+					<td>6</td>
+					<td><strong>63%</strong></td>
+					<td><p><img src="{{url_for('static', filename='img/computer_test_triangles.svg')}}" alt="triangles" width="632" height="269"></p>
+						<p>What percentage of this shape is blue (to nearest percent)?<br />
+							There
+							are 80 triangles altogether. 50 of which are blue, therefore 50/80 &times; 100 = 62.5% This rounds up to <strong>63%</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[6] else 'danger'}}{% endif %}">
+					<td>7</td>
+					<td><strong>6</strong></td>
+					<td><p>If ADD = 9, BAD = 7 and CAD = 8 what is the value of <a href="https://en.wikipedia.org/wiki/Ada_lovelace">ADA</a>?<br />
+						Each letter here has the same value as its place in the alphabet. So A = 1, B = 2 etc.<br />
+						A = 1 D = 4 and A = 1 so ADA = 1 + 4 + 1 = <strong>6</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[7] else 'danger'}}{% endif %}">
+					<td>8</td>
+					<td><strong>40</strong></td>
+					<td><p>If BAD = 10, DAC = 11, and CGI = 22 what is the value of <a href="https://en.wikipedia.org/wiki/Occam_programming_language">OCCAM</a>?<br />
+						Each letter has the same value as its place in the alphabet plus 1. So A = 2, B = 3 etc.<br />
+						O = 16 (15th letter of the alphabet) and M = 14 (13th letter)<br />
+						So OCCAM = 16 + 4 + 4 + 2 + 14 =<strong> 40</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[8] else 'danger'}}{% endif %}">
+					<td>9</td>
+					<td><strong>40</strong></td>
+					<td>If DATA = 52, CACHE = 40 and BIT = 62. What is the value of <a href="https://en.wikipedia.org/wiki/Babbage">BABBAGE</a>?<br />
+						Here each letter has double the value of its place in the alphabet. So A = 2, B= 4 and so forth.<br />
+						So BABBAGE = 4 + 2 + 4 + 4 + 2 + 14 + 10 = <strong>40</strong><br /></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[9] else 'danger'}}{% endif %}">
+					<td>10</td>
+					<td><strong>NW</strong></td>
+					<td><p>You are facing North. Turn 90 degrees left = W<br />
+						Turn 180 degrees right = E Reverse direction = W again<br />
+						Turn 45 degrees left = SW Reverse direction = NE Turn 270 degrees right. = NW<br />
+						In which direction are you now facing?<br />
+						N W E W SW NE <strong>NW</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[10] else 'danger'}}{% endif %}">
+					<td>11</td>
+					<td><strong>bykR</strong></td>
+					<td>Flight tickets for an airline are coded as follows:<br />
+						UK Destinations are coded A, Flights to Europe are coded B, Asian Destinations C, and the Americas D. <br />
+						If a flight takes place between 10 pm and 6 am the same code are used but with lower case letters (a,b,c, and d)<br />
+						Male passengers are coded X and female passengers are coded Y. Children are coded by the same letters in lower case (x.y)<br />
+						Meals are coded as follows:<br />
+						European meal G, Asian Meal H, Vegetarian Meal K. Children's meals coded by the same letters in lower case (g,h,k)<br />
+						First Class passengers are coded P, Business Class Q and economy R<br />
+						What would the code be for a flight to Paris at 5am for a vegetarian 8 year old girl traveling economy class?<br />
+						European Flight before 6 am = b. Female child = y, Vegetarian children's meal = k, Economy class= R<br />
+						Therefore code is<strong> bykR</strong></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[11] else 'danger'}}{% endif %}">
+					<td>12</td>
+					<td><strong>D,HP,V</strong></td>
+					<td><p>Three computers were lined up in a row. The Dell was to the left of the Viglen but not necessarily next to it. The blue computer was to the right of the white computer. The black computer was to the left of the Hewlett Packard PC. The Hewlett Packard was to the left of the Viglen.<br />
+						What was the order of the computers?</p>
+						<table width="80%" cellpadding="1">
+							<tbody><tr>
+								<td><strong>Computer</strong></td>
+								<td><strong>Dell </strong></td>
+								<td><strong>Hewlett Packard</strong></td>
+								<td><strong>Viglen</strong></td>
+							</tr>
+							<tr>
+								<td><strong>Operating System</strong></td>
+								<td> Black</td>
+								<td>White</td>
+								<td> Blue</td>
+							</tr>
+						</tbody></table></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[12] else 'danger'}}{% endif %}">
+					<td>13</td>
+					<td><strong>27</strong></td>
+					<td><p><a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">Tim</a> was given a large bag of sweets and ate one third of the sweets before stopping as he was feeling sick. The next day he ate one third of the remaining sweets and the following day he ate one third of the remainder, before counting the sweets he had left which totaled eight. How many sweets was he given in the beginning?<br />
+						2/3 &times; 2/3 &times; 2/3 = 8/<strong>27</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[13] else 'danger'}}{% endif %}">
+					<td>14</td>
+					<td><strong>21</strong></td>
+					<td>In a counting system used by intelligent apes.<br />
+						A banana = 1<br />
+						6 is represented by an orange and 2 bananas<br />
+						An orange is worth half a mango<br />
+						What is the value of two mangos, an orange and a banana?<br />
+						Banana = 1 orange = 4 mango = 8<br />
+						8 + 8 + 4 + 1 = <strong>21</strong></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[14] else 'danger'}}{% endif %}">
+					<td>15</td>
+					<td><strong>Orange</strong></td>
+					<td>What is two mangos and an orange, divided by an orange with a banana?<br />
+						<strong>An orange</strong><br />
+						(8 + 8 + 4) / (4 + 1) = 4 = <strong>orange</strong></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[15] else 'danger'}}{% endif %}">
+					<td>16</td>
+					<td><strong>DCUKE</strong></td>
+					<td><p>If the code for <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">JAVA</a> is LCXC what is the code for <a href="https://en.wikipedia.org/wiki/BASIC">BASIC</a>?<br />
+						Each letter in JAVA is moved forward in the alphabet by two letters:<br />
+						J
+						+ 2 = L , A + 2 = C , V + 2 = X, A + 2 C<br />
+						Moving each letter in BASIC forward by two we get<strong> DCUKE</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[16] else 'danger'}}{% endif %}">
+					<td>17</td>
+					<td><strong>None of these</strong></td>
+					<td><p>If the code for <a href="https://en.wikipedia.org/wiki/Fortran">FORTRAN</a> is GMUPWUU&nbsp; what is the code for <a href="https://en.wikipedia.org/wiki/Pascal_(programming_language)">PASCAL</a>?<br />
+						Here the sequence is more complex: +1, -2, +3, -4, +5, -6<br />
+						F + 1 = G, O - 2 = M, R +3 = U, T - 4 = P, R + 5 = W, A - 6 = U, N + 7 = U<br />
+						Applying the same process to PASCAL we get<strong> QYVYFF</strong>, which is not one of the listed solutions, so the answer is none of these.&nbsp;</p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[17] else 'danger'}}{% endif %}">
+					<td>18</td>
+					<td><strong>TUU</strong></td>
+					<td>If the code for <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> is QLY. What is the code for <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> ?<br />
+						Here the change is +1, +4, +9 (square numbers)<br />
+						So applying the same process to SQL we get <strong>TUU&nbsp;</strong></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[18] else 'danger'}}{% endif %}">
+					<td>19</td>
+					<td><strong>7 </strong></td>
+					<td><p><img src="{{url_for('static', filename='img/computer_test_grid.svg')}}" alt="squares" width="632" height="269"></p>
+						<p>You start in square E6 facing East. Move 3 squares forward = H6<br />
+							Turn 90 degrees clockwise, move two squares forward = H4.<br />
+							Turn 180 degrees anticlockwise. Move 5 squares forward = H9<br />
+							Turn 90 degrees anticlockwise. Move 4 squares forwards = D9.<br />
+							Turn 90 degrees clockwise. Move two squares backwards = <strong>D7</strong><br />
+							What is the Y COORDINATE of the square you are now in?<br />
+							<strong>7</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[19] else 'danger'}}{% endif %}">
+					<td>20</td>
+					<td><strong>H</strong></td>
+					<td><p>You start in square E6 facing South West. Move three squares forward = B3 Facing SW<br />
+						Rotate 135 degrees clockwise. Move 4 squares forward. = B7 Facing N<br />
+						Rotate 45 degrees clockwise. Move 2 squares forward = D9 Facing NE<br />
+						Rotate 90 degrees anticlockwise and move 4 squares backwards. H5 Facing NW<br />
+						What is the X Coordinate of the square you are now in?<strong> H<br />
+							</strong>C D E F G<strong> H</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[20] else 'danger'}}{% endif %}">
+					<td>21</td>
+					<td><strong>135</strong></td>
+					<td>What is the angle between the hands of a clock at 10.30?<br />
+						The minute hand will be at 6 o'clock = 180 degrees<br />
+						The hour hand will be half way between 10 and 11 o'clock. <br />
+						Each hour subtends 30 degrees so the hour hand will be at 30 &times; 10.5 degrees <br />
+						= 315 degrees.<br />
+						So the difference between the two hands is 315 - 180 = <strong>135 degrees.</strong></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[21] else 'danger'}}{% endif %}">
+					<td>22</td>
+					<td><strong>58%</strong></td>
+					<td>In a chocolate factory, a machine takes a 1 kg block of chocolate. It then divides this into rectangles each weighing 10g. These rectangles are then stamped into disks of chocolate each weighing 6g with the remaining chocolate discarded. These chocolate disks are then packed into bags of 4 which are sealed and finally packed into boxes, each containing 6 bags ready for dispatch to the shops. What weight of chocolate out of the original kilogram will be contained in COMPLETELY FILLED boxes (i.e. those containing a full 6 bags)?<br />
 						<br />
-						</strong>STEP 1: 5 &times; 3 = 15 = F4<br />
-					STEP 2: 15 &times; 3 = F4 = 45 &amp; E3 = 1. <br />
-					STEP 3:
-					45 &times; 3 = 135 &amp; E3 = 2. <br />
-					135 &times; 3 = 405 &amp; E3 = 3. <br />
-					STOP. <br />
-					F4 now equals <strong>405</strong></td>
-			</tr>
-			<tr class="{% if correct %}table-{{'success' if correct[25] else 'danger'}}{% endif %}">
-				<td>26</td>
-				<td><strong>83</strong></td>
-				<td><p>Add A1 + B3 + C4 + D2 and put the result in E2. Add A3 + B1 + C2 + D4 and place the result in E4. If the value of E4 is larger than E2 swop their contents, otherwise leave them as they are. Multiply E2 by D1, then take away A4 and place the result in F2. What is the value of F2?<br />
-					<br />
-					Add A1 + B3 + C4 + D2 and put the result in E2. 9 + 1 + 6 + 7 = 23 = E2<br />
-					Add A3 + B1 + C2 + D4 and place the result in E4. 11 + 7 + 3 + 3 = 24 = E4<br />
-					If the value of E4 is larger than E2 swop their contents, otherwise leave them as they are.<br />
-					E4 = 24 whereas E2 = 23 therefore they should be swopped, so E2 now = 24 and E4 = 23<br />
-					Multiply E2 by D1 then take away A4 24 &times; 4 = 96 - 13 = 83.<br />
-					What is the value of F2?<strong> 83</strong></p></td>
-			</tr>
-		</tbody></table>
-</div>
-		<div class="forPrint footnote"><h4>Links</h4>
-			<ol>
-				<li>https://www.kent.ac.uk/ces/tests/psychotests.html#PROGRAMMING</li>
-				<li>https://www.charlestonsouthern.edu/computerscience/majors.php</li>
-				<li>https://www.python.org/</li>
-				<li>https://www.charlestonsouthern.edu/computerscience/majors.php</li>
-				<li>https://www.kent.ac.uk/ces/sk/computing-skills.html</li>
-				<li>https://en.wikipedia.org/wiki/Grace_Hopper</li>
-				<li>https://en.wikipedia.org/wiki/Turing</li>
-				<li>https://en.wikipedia.org/wiki/Ada_lovelace</li>
-				<li>https://en.wikipedia.org/wiki/Occam_programming_language</li>
-				<li>https://en.wikipedia.org/wiki/Babbage</li>
-				<li>https://en.wikipedia.org/wiki/Tim_Berners-Lee</li>
-				<li>https://en.wikipedia.org/wiki/Java_(programming_language)</li>
-				<li>https://en.wikipedia.org/wiki/BASIC</li>
-				<li>https://en.wikipedia.org/wiki/Fortran</li>
-				<li>https://en.wikipedia.org/wiki/Pascal_(programming_language)</li>
-				<li>https://en.wikipedia.org/wiki/PHP</li>
-				<li>https://en.wikipedia.org/wiki/SQL</li>
-			</ol>
-		</div>
+						1000 g of chocolate is made into 100 rectangles of chocolate each weighting 10g. <br />
+						These are then stamped into 100 disks of 6g each.<br />
+						4 disks are packed into each bag and then 6 bags are placed into each box. <br />
+						Therefore there are 24 disks in each box. <br />
+						As there are 100 disks in total produced from the 1 Kg of chocolate, there will therefore be four boxes with 4 disks left over. <br />
+						These 4 boxes contain 96 disks each weighing 6g. <br />
+						So the total weight of chocolate in the boxes will be 96 &times; 6g = 576g.&nbsp; <strong><br />
+						</strong>Converting to a percentage: 576/1000 &times; 100 = 57.6% which rounds to <strong>58%</strong></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[22] else 'danger'}}{% endif %}">
+					<td>23</td>
+					<td><strong>26</strong></td>
+					<td><p><img src="{{url_for('static', filename='img/computer_test_spreadsheet.png')}}" alt="spreadsheet" width="633" height="269"></p>
+						<p>What is A4 multiplied by D3 divided by C2?<br />
+							A4 = 13, D3 = 6, C2 = 3. 13 &times; 6 = 78 ÷ 3 = <strong>26</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[23] else 'danger'}}{% endif %}">
+					<td>24</td>
+					<td><strong>None of these</strong></td>
+					<td><p>Store the answer to B4 plus A2 in F1. Store the answer to A4 minus D2 in F3. Multiply F1 by F3. What is the final answer?<br />
+						<br />
+						Store the answer to B4 plus A2 in F1. <br />
+						B4 + A2 = 9 + 8 = 17 = F1<br />
+						Store the answer to A4 minus D2 in F3. <br />
+						13 - 7 = 6 = F3<br />
+						Multiply F1 by F3. <br />
+						17 &times; 6 = <strong>102</strong>. None of the given solutions is 102, so the answer is <strong>"None of these"</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[24] else 'danger'}}{% endif %}">
+					<td>25</td>
+					<td><strong>405</strong></td>
+					<td>STEP 1: Multiply C3 by D4 and store the result in F4<br />
+						STEP 2: Multiply F4 by 3 then add 1 to E3.<br />
+						STEP 3: Repeat STEP 2 until the value of E3 equals 3 then stop. <br />
+						What is the value of F4?<strong><br />
+							<br />
+							</strong>STEP 1: 5 &times; 3 = 15 = F4<br />
+						STEP 2: 15 &times; 3 = F4 = 45 &amp; E3 = 1. <br />
+						STEP 3:
+						45 &times; 3 = 135 &amp; E3 = 2. <br />
+						135 &times; 3 = 405 &amp; E3 = 3. <br />
+						STOP. <br />
+						F4 now equals <strong>405</strong></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[25] else 'danger'}}{% endif %}">
+					<td>26</td>
+					<td><strong>83</strong></td>
+					<td><p>Add A1 + B3 + C4 + D2 and put the result in E2. Add A3 + B1 + C2 + D4 and place the result in E4. If the value of E4 is larger than E2 swop their contents, otherwise leave them as they are. Multiply E2 by D1, then take away A4 and place the result in F2. What is the value of F2?<br />
+						<br />
+						Add A1 + B3 + C4 + D2 and put the result in E2. 9 + 1 + 6 + 7 = 23 = E2<br />
+						Add A3 + B1 + C2 + D4 and place the result in E4. 11 + 7 + 3 + 3 = 24 = E4<br />
+						If the value of E4 is larger than E2 swop their contents, otherwise leave them as they are.<br />
+						E4 = 24 whereas E2 = 23 therefore they should be swopped, so E2 now = 24 and E4 = 23<br />
+						Multiply E2 by D1 then take away A4 24 &times; 4 = 96 - 13 = 83.<br />
+						What is the value of F2?<strong> 83</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[26] else 'danger'}}{% endif %}">
+					<td>27</td>
+					<td><strong>77</strong></td>
+					<td><p>If BOOK = 47,  SEA = 28, and DOG = 29. What is the value of ADDRESS?<br />
+						<br />
+						Here each letter's value is one more than its place in the alphabet.<br />
+						Therefore, A = 2, B =  3, C = 4 and so forth.<br />
+						ADDRESS = A + D + D + R + E + S + S<br />
+						ADDRESS = 2 + 5 + 5 + 19 + 6 + 20 + 20 = 77<br />
+						What is the value of ADDRESS?<strong> 77</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[27] else 'danger'}}{% endif %}">
+					<td>28</td>
+					<td><strong>120</strong></td>
+					<td><p>It is 4 o’clock. What is the measure of the angle formed between the hour hand and the minute hand?<br />
+						<br />
+						At 3 o'clock, the angle between the hour and minute hands is 90 degrees.<br />
+						To change from 3 to 4 o'clock you must find out the angle between 2 hours.<br />
+						The angle between 12 and 3 can be divided into 3 sections to get the angle of a single hour.<br />
+						90 degrees &divide; 3 sections = 30 degrees between each hour.<br />
+						Since we know the distance from one hour to the next is 30 degrees, we can add 30 degrees to the 90 degrees to get from 3 o'clock to 4 o'clock.<br />
+						30 degrees + 90 degrees = 120 degrees<br />
+						What is the measure of the angle formed between the hour hand and the minute hand?<strong> 120 degrees</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[28] else 'danger'}}{% endif %}">
+					<td>29</td>
+					<td><strong>Dean, Henry, Fred</strong></td>
+					<td><p>Three boys were lined up in a row. Dean(D) was to the left of Fred(F) but not necessarily next to him. The blue shirt boy was to the right of the white shirt boy. The black shirt boy was to the left of Henry(H). Henry was to the left of Fred.<br />
+						<br />
+						To answer this question we use the clues to determine the order the boys.<br />
+						Dean(D) is to the left of Fred(F) but not necessarliy next to him. So far D  F<br />
+						The blue(B) shirt boy was to the right of the white(W) shirt boy. So W B<br />
+						The black(Bl) shirt boy was to the left of Henry(H). Bl H<br />
+						Henry(H) was to the left of Fred(F). H F<br />
+						So from the information given above, both boys are to the left of Fred which makes him in the furthest right spot.<br />
+						Given the second and third clues, Fred must be the blue shirt boy.<br />
+						By clues two and three we can determine that the order of the shirts are Bl W B.<br />
+						Finally, we can look at clues one, three, and four to determine that the order of the boys is Dean(D), Henry(H), Fred(F).<br />
+						What is the order that the boys are in?<strong> Dean, Henry, Fred</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[29] else 'danger'}}{% endif %}">
+					<td>30</td>
+					<td><strong>If an animal is not in group B, it is not in group A.</strong></td>
+					<td><p>If an animal is in group A, they are also in group B.<br />If the above statement is true, which of the following statements must also be true?<br />
+						<br />
+						A way to simplify what is said above is, if p (an animal is in group A), then q (the animal is in group B).<br />
+						If an animal is in group B, it is also in group A. <- This statement is if q then p, which is not equivallent.<br />
+            			If an animal is not in group B, it is not in group A. <- This statement says if not q then not p. Since the statement above states that the animals in group A will be in group B, if the animal is not in B it can not be in A. This is the equivallent statement.<br />
+            			If an animal is not in group A, it is not in group B. <- This sentence is if not p then not q, however the animal can be in group B without being in group A.<br />
+            			If an animal is in group B, it is not in group A. <- This statement says if q then not p, which is not equivallent.<br />
+            			If an animal is not in group B, it is in group A. <- This sentence says if not q then p, however if p is true the q must also be true, therefore it is not equivallent.<br />
+						Which of the statements must also be true?<strong> If an animal is not in group B, it is not in group A.</strong></p></td>
+				</tr>
+				<tr class="{% if correct %}table-{{'success' if correct[30] else 'danger'}}{% endif %}">
+					<td>31</td>
+					<td><strong>If Maddie does not like to swim, then she is not Sarah's friend.</strong></td>
+					<td><p>All of Sarah's friends like to swim.<br>If the above statement is true, which of the following statements must also be true?<br />
+						<br />
+						A way to simplify what is said above is, if p (the person is Sarah's friend) then q (they like to swim).<br />
+						If Jill is not Sarah's friend, then she does not like to swim. <- This statement means if not p then not q, however Jill can like to swim even if she is not Sarah's friend.<br />
+            			If Laura likes to swim, then she is Sarah's friend. <- This sentence says if q then p, but Sarah is not friends with every person who likes to swim.<br />
+            			If Mary likes to swim, then she is not Sarah's friend. <- This sentence states if q then not p, which can not be true when the if p then q is true.<br />
+            			If Amanda is Sarah's friend, then she does not like to swim. <- This statement says if p then not q. That can not be true while if p then q is true.<br />
+            			If Maddie does not like to swim, then she is not Sarah's friend. <- This sentence says if not q then not p. This statement is equivallent to the question statement because since Maddie does not like to swim, she can not be Sarah's friend when all of Sarah's friends like to swim.<br />
+						Which of the statements must also be true?<strong> If Maddie does not like to swim, then she is not Sarah's friend.</strong></p></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="forPrint footnote"><h4>Links</h4>
+		<ol>
+			<li>https://www.kent.ac.uk/ces/tests/psychotests.html#PROGRAMMING</li>
+			<li>https://www.charlestonsouthern.edu/computerscience/majors.php</li>
+			<li>https://www.python.org/</li>
+			<li>https://www.charlestonsouthern.edu/computerscience/majors.php</li>
+			<li>https://www.kent.ac.uk/ces/sk/computing-skills.html</li>
+			<li>https://en.wikipedia.org/wiki/Grace_Hopper</li>
+			<li>https://en.wikipedia.org/wiki/Turing</li>
+			<li>https://en.wikipedia.org/wiki/Ada_lovelace</li>
+			<li>https://en.wikipedia.org/wiki/Occam_programming_language</li>
+			<li>https://en.wikipedia.org/wiki/Babbage</li>
+			<li>https://en.wikipedia.org/wiki/Tim_Berners-Lee</li>
+			<li>https://en.wikipedia.org/wiki/Java_(programming_language)</li>
+			<li>https://en.wikipedia.org/wiki/BASIC</li>
+			<li>https://en.wikipedia.org/wiki/Fortran</li>
+			<li>https://en.wikipedia.org/wiki/Pascal_(programming_language)</li>
+			<li>https://en.wikipedia.org/wiki/PHP</li>
+			<li>https://en.wikipedia.org/wiki/SQL</li>
+		</ol>
+	</div>
 {% endblock content %}

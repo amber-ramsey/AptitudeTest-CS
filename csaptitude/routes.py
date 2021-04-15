@@ -132,8 +132,8 @@ def test_results():
 			.order_by('question_num').all())
 		score = len(correct)
 		correct = [a.question_num + 1 for a in correct]
-		correct = [c in correct for c in list(range(1, 27))]
-		[c in correct for c in list(range(1, 27))]
+		correct = [c in correct for c in list(range(1, 32))]  #the second numbers were 27
+		[c in correct for c in list(range(1, 32))]
 	return render_template('results.html', title="Test Results", answered=answered,
 		correct=correct, score=score)
 

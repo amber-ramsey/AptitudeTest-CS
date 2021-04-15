@@ -502,7 +502,6 @@ const Questions = Object.freeze([
 
     //28
     {
-        "image": "computer_test_spreadsheet.png",
         "Question": "It is 4 o’clock. What is the measure of the angle formed between the hour hand and the minute hand?",
         "Choices": [
             "90",
@@ -517,7 +516,6 @@ const Questions = Object.freeze([
 
     //29
     {
-        "image": "computer_test_spreadsheet.png",
         "Question": "Three boys were lined up in a row. Dean(D) was to the left of Fred(F) but not necessarily next to him. The blue shirt boy was to the right of the white shirt boy. The black shirt boy was to the left of Henry(H). Henry was to the left of Fred.",
         "Choices": [
             "Henry, Fred, Dean",
@@ -532,10 +530,9 @@ const Questions = Object.freeze([
 
     //30
     {
-        "image": "computer_test_spreadsheet.png",
         "Question": "If an animal is in group A, they are also in group B.<br>If the above statement is true, which of the following statements must also be true?",
         "Choices": [
-            "If an animal is in group B, they are also in group A.",
+            "If an animal is in group B, it is also in group A.",
             "If an animal is not in group B, it is not in group A.", //Correct Answer
             "If an animal is not in group A, it is not in group B.",
             "If an animal is in group B, it is not in group A.",
@@ -547,7 +544,6 @@ const Questions = Object.freeze([
 
     //31
     {
-        "image": "computer_test_spreadsheet.png",
         "Question": "All of Sarah's friends like to swim.<br>If the above statement is true, which of the following statements must also be true?",
         "Choices": [
             "If Jill is not Sarah's friend, then she does not like to swim.",
@@ -561,7 +557,6 @@ const Questions = Object.freeze([
     },
 
 ]);
-
 
 // Array to hold the user's test answers.
 const Ans = new Array(Questions.length);
