@@ -26,7 +26,7 @@ class TestResult(db.Model):
 	elapsed_time_ms = db.Column(db.Integer, nullable=False)
 	platform = db.Column(db.String(32), nullable=True)
 	browser = db.Column(db.String(32), nullable=True)
-	browser_version = db.Column(db.String(8), nullable=True)
+	browser_version = db.Column(db.String(16), nullable=True)
 	language = db.Column(db.String(32), nullable=True)
 	created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
