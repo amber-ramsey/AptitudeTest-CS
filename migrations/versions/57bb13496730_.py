@@ -1,7 +1,7 @@
 """empty message
 
 Revision ID: 57bb13496730
-Revises: 
+Revises:
 Create Date: 2021-03-20 15:38:04.040057
 
 """
@@ -35,7 +35,7 @@ def upgrade():
     sa.Column('elapsed_time_ms', sa.Integer(), nullable=False),
     sa.Column('platform', sa.String(length=32), nullable=True),
     sa.Column('browser', sa.String(length=32), nullable=True),
-    sa.Column('browser_version', sa.String(length=8), nullable=True),
+    sa.Column('browser_version', sa.String(length=16), nullable=True),
     sa.Column('language', sa.String(length=32), nullable=True),
     sa.Column('created_at', sa.DateTime(), nullable=False),
     sa.ForeignKeyConstraint(['user_id'], ['users.id'], ),
