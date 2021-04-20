@@ -13,12 +13,15 @@ const Timer = (function() {
 
         if (remainingSecs <= 0)
         {
-            //GetScore(false);
             // window.alert("End of Test.\nYou can continue if you wish, " +
             //     "but please note your score now.");
             constdownEl.innerHTML = "0 minutes  0 seconds";
             //document.testForm.submit();
-            document.testForm.dispatchEvent(new Event("submit"));
+            const domEvent = new Event('submit', {"bubbles": true, "cancelable": true});
+            document.testForm.dispatchEvent(domEvent);
+            document.getElementById('submit').click();
+            //GetScore(new Event("submit"));
+            //document.testForm.submit();
         }
         else
         {
